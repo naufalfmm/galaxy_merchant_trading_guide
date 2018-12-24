@@ -1,0 +1,4 @@
+[a-zA-Z]+ is [IVXLCDMivxlcdm]{1}
+[a-zA-Z ]+ is \d+ [cC]redits
+how much is [a-zA-Z ]+ \?
+how many [cC]redits is [a-zA-Z ]+ \?

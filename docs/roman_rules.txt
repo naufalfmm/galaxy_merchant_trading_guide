@@ -1,0 +1,7 @@
+1. The roman digits I, X, and C can be repeated upto thrice(three times).
+2. The roman digits V, L, and D cannot be repeated.
+3. The roman digits I, X, and C can subtract only digit upto the two biggest.
+4. The roman digits V, L, and D cannot substract any digit.
+5. Substracting digit only can substract one times, i.e
+   IX --> 9
+   IIX --> wrong, it have to be VIII
