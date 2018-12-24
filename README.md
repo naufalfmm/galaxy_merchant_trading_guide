@@ -1,6 +1,5 @@
 
 Galaxy Merchant Trading Guide
-
 ===========================
 This is repository of the Galaxy Merchant Trading Guide problem solution created by [Naufal Farras][1]. The solution of problem is typed in [Go Programming Language][2].
 
