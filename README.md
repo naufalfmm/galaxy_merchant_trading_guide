@@ -124,7 +124,9 @@ The tests are done manually not programmatically. The tests are divided into
 ##  Unit Tests
 
 ####  RomanIntoNumberConv() in './romans/romans.go'
+
 Convert roman digits into numbers (int)
+
 | Test Case | Expected | Actual |
 | ------------ | -------- | ------- |
 | VIII | 8 | 8 |
@@ -135,8 +137,11 @@ Convert roman digits into numbers (int)
 | LCM | *Error* | *Error* |
 
 ####  intergalacticIntoRoman() in ./intergalactic/intergalactic.go
+
 Convert intergalactic digits into roman digits
+
 **Known glob is I, prok is V, pish is X, tegj is L**
+
 | Test Case | Expected | Actual |
 | -------------- | -------- | ------- |
 | glob glob | II | II |
@@ -145,7 +150,9 @@ Convert intergalactic digits into roman digits
 | mush pish | *Error* | *Error* |
 
 ####  inputClassification()
+
 Classify input into 4 types
+
 | Test Case | Expected | Actual |
 | --------- | -------- | ------- |
 | glob is I | Type 1 | Type 1 |
@@ -156,7 +163,9 @@ Classify input into 4 types
 | aaaaaaaegegwebrwhwr | *Error* | *Error* |
 
 ## Integration Test
+
 Integration test checks whether the program returns the correct output for the input typed by user.
+
 | Test Case | Expected | True/False |
 | --------- | -------- | ------- |
 | glob is I | Map of intergalactic and romans convention get new data glob: I | True |
