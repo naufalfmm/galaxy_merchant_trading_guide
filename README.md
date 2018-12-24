@@ -124,9 +124,7 @@ The tests are done manually not programmatically. The tests are divided into
 ##  Unit Tests
 
 ####  RomanIntoNumberConv() in './romans/romans.go'
-
 Convert roman digits into numbers (int)
-
 | Test Case | Expected | Actual |
 | ------------ | -------- | ------- |
 | VIII | 8 | 8 |
@@ -136,12 +134,9 @@ Convert roman digits into numbers (int)
 | IM | *Error* | *Error* |
 | LCM | *Error* | *Error* |
 
-####  intergalacticIntoRoman()
-
+####  intergalacticIntoRoman() in ./intergalactic/intergalactic.go
 Convert intergalactic digits into roman digits
-
 **Known glob is I, prok is V, pish is X, tegj is L**
-
 | Test Case | Expected | Actual |
 | -------------- | -------- | ------- |
 | glob glob | II | II |
@@ -150,9 +145,7 @@ Convert intergalactic digits into roman digits
 | mush pish | *Error* | *Error* |
 
 ####  inputClassification()
-
 Classify input into 4 types
-
 | Test Case | Expected | Actual |
 | --------- | -------- | ------- |
 | glob is I | Type 1 | Type 1 |
@@ -161,6 +154,17 @@ Classify input into 4 types
 | how many Credits is glob prok Iron ? | Type 4 | Type 4 |
 | how much wood could a woodchuck chuck if a woodchuck could chuck wood ? | *Error* | *Error* |
 | aaaaaaaegegwebrwhwr | *Error* | *Error* |
+
+## Integration Test
+Integration test checks whether the program returns the correct output for the input typed by user.
+| Test Case | Expected | True/False |
+| --------- | -------- | ------- |
+| glob is I | Map of intergalactic and romans convention get new data glob: I | True |
+| glob glob Silver is 34 Credits | Map of metal value get new data Silver: 17 | True |
+| how much is pish tegj glob glob ? | Return output "pish tegj glob glob is 42" | True |
+| how many Credits is glob prok Iron ? | Return output "glob prok Silver is 68 Credits" | True |
+| how much wood could a woodchuck chuck if a woodchuck could chuck wood ? | Return output "I have no idea what you are talking about" | True |
+| aaaaaaaegegwebrwhwr | Return output "I have no idea what you are talking about" | True |
 
 [1]: https://gitlab.com/naufalfmm
 
