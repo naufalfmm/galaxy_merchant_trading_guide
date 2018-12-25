@@ -175,9 +175,6 @@ Integration test checks whether the program returns the correct output for the i
 | aaaaaaaegegwebrwhwr | Return output "I have no idea what you are talking about" | True |
 
 [1]: https://gitlab.com/naufalfmm
-
 [2]: https://golang.org/
-
 [3]: http://en.wikipedia.org/wiki/Roman_numerals
-
 [4]: https://github.com/naufalfmm/galaxy_merchant_trading_guide/blob/master/docs/solution_flow.png

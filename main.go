@@ -44,6 +44,7 @@ func metalsCreditValueInput(m map[string]string, n map[string]float32, inputStr 
 		return checkError
 	}
 
+	// The credit values of metal is stored in format the credit value of metal per metal
 	n[metalValueType[len(metalValueType)-1]] = float32(metalCreditsValue)/float32(metalValue)
 
 	return nil
@@ -93,6 +94,7 @@ func interCreditsValueQuestionInput(m map[string]string, n map[string]float32, i
 	if checkError != nil {
 		return checkError, ""
 	}
+	
 	creditsValue = n[metalType] * float32(romansValue)
 
 	return nil, strings.Join(intergalDigits, " ") + " " + metalType + " is " + strconv.FormatFloat(float64(creditsValue), 'f', -1, 32) + " Credits"
@@ -106,6 +108,7 @@ func inputClassification(m map[string]string, n map[string]float32, inputStr str
 	var invalidInputMessage = "I have no idea what you are talking about"
 
 	inputStr = strings.TrimRight(inputStr, "\r\n")
+	// Check whether inputStr is type 1
 	if checkMatch, checkError = regexp.MatchString("[a-zA-Z]+ is [IVXLCDMivxlcdm]{1}", inputStr); checkMatch {
 		if checkError != nil {
 			return checkError, ""
@@ -116,6 +119,7 @@ func inputClassification(m map[string]string, n map[string]float32, inputStr str
 			return checkError, ""
 		}
 		return nil, ""
+	// Check whether inputStr is type 2
 	} else if checkMatch, checkError = regexp.MatchString("[a-zA-Z ]+ is \\d+ [cC]redits", inputStr); checkMatch {
 		if checkError != nil {
 			return checkError, ""
@@ -126,6 +130,7 @@ func inputClassification(m map[string]string, n map[string]float32, inputStr str
 			return checkError, ""
 		}
 		return nil, ""
+	// Check whether inputStr is type 3
 	} else if checkMatch, checkError = regexp.MatchString("how much is [a-zA-Z ]+ \\?", inputStr); checkMatch {
 		if checkError != nil {
 			return checkError, ""
@@ -136,6 +141,7 @@ func inputClassification(m map[string]string, n map[string]float32, inputStr str
 			return checkError, ""
 		}
 		return nil, returnAnswer
+	// Check whether inputStr is type 4
 	} else if checkMatch, checkError = regexp.MatchString("how many [cC]redits is [a-zA-Z ]+ \\?", inputStr); checkMatch {
 		if checkError != nil {
 			return checkError, ""
@@ -145,6 +151,7 @@ func inputClassification(m map[string]string, n map[string]float32, inputStr str
 			return checkError, ""
 		}
 		return nil, returnAnswer
+	// inputStr is not in the following types, it will return invalidInputMessage
 	} else {
 		return errors.New(invalidInputMessage), ""
 	}
