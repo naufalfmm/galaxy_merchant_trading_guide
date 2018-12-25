@@ -124,7 +124,7 @@ The tests are done manually not programmatically. The tests are divided into
 
 ##  Unit Tests
 
-####  RomanIntoNumberConv() in './romans/romans.go'
+####  1. RomanIntoNumberConv() in './romans/romans.go'
 
 Convert roman digits into numbers (int)
 
@@ -137,7 +137,7 @@ Convert roman digits into numbers (int)
 | IM | *Error* | *Error* |
 | LCM | *Error* | *Error* |
 
-####  intergalacticIntoRoman() in ./intergalactic/intergalactic.go
+####  2. intergalacticIntoRoman() in ./intergalactic/intergalactic.go
 
 Convert intergalactic digits into roman digits
 
@@ -150,7 +150,7 @@ Convert intergalactic digits into roman digits
 | tegj | L | L |
 | mush pish | *Error* | *Error* |
 
-####  inputClassification()
+####  3. inputClassification()
 
 Classify input into 4 types
 
