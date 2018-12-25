@@ -62,6 +62,8 @@ The flowchart of solution looks like below
 
 ![Solution Flowchart][4]
 
+## Input Types
+
 Input is divided into 4 types (categorized by using Regex):
 
 ###  Type 1
